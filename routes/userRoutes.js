@@ -1,12 +1,9 @@
 import exp from "constants";
 import { Router } from "express";
+import { UserController } from "../controller/userController.js";
 const userRouter = Router();
 
-userRouter.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-userRouter.post("/", (req, res) => {
-  res.send("Hello World!");
-});
+userRouter.get("/", UserController.User.getUser);
+userRouter.post("/createAdmin", UserController.User.createUser);
 
 export { userRouter };
