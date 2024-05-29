@@ -4,7 +4,7 @@
 </div>
 
 <div>
-<h1>Clotricks - By NUTZ</h1>
+<h1>Ticket Booking- By Kowsi</h1>
 </div>
 
 <!-- <li> -->
@@ -19,9 +19,6 @@
 - ORM : Sequelize
 - Database : MySQL
 - Validation : AJV
-- ImageUpload : Multer
-- Mailer : SendMail
 - ViewEngine : ExpressJs
 - Errors : err-code
 - VersionControl : Git
-- Payment Gateway : Stripe
