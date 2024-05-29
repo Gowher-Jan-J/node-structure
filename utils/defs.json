@@ -1,0 +1,65 @@
+{
+  "$id": "defs",
+  "definitions": {
+    "Customer": {
+      "customerId": {
+        "type": "string",
+        "title": "Customer Id",
+        "format": "numeric"
+      },
+      "name": {
+        "type": "string",
+        "title": "Customer Name"
+      },
+      "password": {
+        "type": "string",
+        "title": "Password"
+      },
+      "email": {
+        "type": "string",
+        "title": "Email",
+        "format": "email"
+      },
+      "phone": {
+        "type": "string",
+        "title": "Contact"
+      },
+      "gender": {
+        "type": "string",
+        "title": "Gender",
+        "enum": [
+          "Male",
+          "Female",
+          "Others"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "title": "Account Status",
+        "enum": [
+          "active",
+          "inactive",
+          "terminated"
+        ]
+      }
+    },
+    "userAuth": {
+      "authId": {
+        "type": "string",
+        "title": "Id"
+      },
+      "token": {
+        "type": "string",
+        "title": "Token"
+      },
+      "ipv4": {
+        "type": "string",
+        "title": "IP"
+      },
+      "userAgent": {
+        "type": "string",
+        "title": "UserAgent"
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import { indexRouter } from "./routes/indexRoutes.js";
-import { sequelize, admin } from "./models/models.js";
+import { userRouter } from "./routes/userRoutes.js";
+import { sequelize, user, userAuthentication } from "./models/models.js";
 
 const app = express();
 const port = 3006;
@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/", indexRouter);
+app.use("/", userRouter);
 
 (async () => {
   try {
